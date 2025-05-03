@@ -588,12 +588,12 @@
                 <!-- START CONTACT FORM DESIGN AREA -->
                 <div class="col-lg-6">
                     <div class="contact-form contact-form-area wow fadeInUp delay-0-4s">
-                        <form id="contactForm" class="contact-form" name="contact" netlify>
+                        <form id="contactForm" class="contact-form" name="contact" method="post" netlify>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="name">Full Name</label>
-                                        <input type="text" id="name" class="form-control" value="" placeholder="Your Name" required="" data-error="Please enter your Name" />
+                                        <input name="name" type="text" id="name" class="form-control" value="" placeholder="Your Name" required="" data-error="Please enter your Name" />
                                         <label for="name" class="for-icon"><i class="far fa-user"></i></label>
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -601,7 +601,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="email">Email Address</label>
-                                        <input type="email" id="email" class="form-control" value="" placeholder="Your Email" required="" data-error="Please enter your Email" />
+                                        <input name="email" type="email" id="email" class="form-control" value="" placeholder="Your Email" required="" data-error="Please enter your Email" />
                                         <label for="email" class="for-icon"><i class="far fa-envelope"></i></label>
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -609,11 +609,11 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="name">Project Type</label>
-                                        <input type="text" id="subject" class="form-control" value="" placeholder="Project Type" required="" data-error="Please enter project type" />
+                                        <input name="subject" type="text" id="subject" class="form-control" value="" placeholder="Project Type" required="" data-error="Please enter project type" />
                                         <label for="name" class="for-icon"><i class="far fa-briefcase"></i></label>
                                         <div class="help-block with-errors"></div>
                                         <label for="name">Subject</label>
-                                        <input type="text" id="subject" class="form-control" value="" placeholder="Your Subject" required="" data-error="Please enter your Name" />
+                                        <input name="subject" type="text" id="subject" class="form-control" value="" placeholder="Your Subject" required="" data-error="Please enter your Name" />
                                         <label for="name" class="for-icon"><i class="far fa-user"></i></label>
                                         <div class="help-block with-errors"></div>
                                     </div>
