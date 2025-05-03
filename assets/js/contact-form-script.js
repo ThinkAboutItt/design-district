@@ -3,17 +3,17 @@
 /*==============================================================*/
 (function ($) {
     "use strict"; // Start of use strict
-    $("#contactForm").validator().on("submit", function (event) {
-        if (event.isDefaultPrevented()) {
-            // handle the invalid form...
-            formError();
-            submitMSG(false, "Did you fill in the form properly?");
-        } else {
-            // everything looks good!
-            event.preventDefault();
-            submitForm();
-        }
-    });
+    // $("#contactForm").validator().on("submit", function (event) {
+    //     if (event.isDefaultPrevented()) {
+    //         // handle the invalid form...
+    //         formError();
+    //         submitMSG(false, "Did you fill in the form properly?");
+    //     } else {
+    //         // everything looks good!
+    //         event.preventDefault();
+    //         submitForm();
+    //     }
+    // });
 
 
     function submitForm(){
@@ -41,14 +41,14 @@
     }
 
     function formSuccess(){
-        $("#contactForm")[0].reset();
+        // $("#contactForm")[0].reset();
         submitMSG(true, "Message Submitted!")
     }
 
     function formError(){
-        $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            $(this).removeClass();
-        });
+        // $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        //     $(this).removeClass();
+        // });
     }
 
     function submitMSG(valid, msg){
